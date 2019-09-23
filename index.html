@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+    
+    function spinner()
+    {   
+        var stopper = 0;
+        var timer = window.setInterval(()=>{
+            document.getElementById("spin").style.transform = `rotate(${stopper*15}deg)`;
+            stopper++;
+            if(stopper==25)
+            {
+                clearInterval(timer);
+            }
+        },42);
+    }
+    </script>
+    <style>
+    *
+{
+    margin: 0;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 5px 15px;
+    background-color: aquamarine;
+}
+header, main, footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4vh 4vh;
+    padding: 1vh;
+}
+header
+{
+    background-image: url("https://i.imgur.com/JmeNxkS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    box-shadow: 0px 0px 15px black;
+}
+h1
+{
+    text-shadow: 2px 2px 5px aqua;
+}
+    </style>
+    <title>Exercise A</title>
+</head>
+<body>
+    <nav>
+        <a href="https://docs.google.com/document/d/1vjvcwD4YIVnebQOwyHk4aTQYCiZBHiYNFTSlnPo5vXQ/">Resume</a>
+        <a href="https://github.com/garryc5">Github</a>
+        <a href="https://www.linkedin.com/in/garrett-carver-542b9716b/">Linkedin</a>
+    </nav>
+    <header>
+        <h1 id="spin">Hire Me</h1>
+        <Button onclick="spinner()">Click Me!!!</Button>
+    </header>
+    <main>
+    <h3>About Me:</h3>
+    <p>
+        I’m a former art student turned software engineer.
+        I love the development process, from making captivating design to incorporating high functionality. I enjoy finding solutions to complex problems, while gaining new perspectives from others. I will always approach life with an open mind, to continue to learn and grow at every opportunity."
+    </p>        
+    <h3> GOALS:</h3> 
+    <p> 
+        Currently I'm seeking to get into the I.T. field as a software engineer. I'm looking for jobs in Marryland, so I can be close to my amazingly supportive girlfriend.
+    </p>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
