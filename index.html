@@ -4,60 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script>
-    
-    function spinner()
-    {   
-        var stopper = 0;
-        var timer = window.setInterval(()=>{
-            document.getElementById("spin").style.transform = `rotate(${stopper*15}deg)`;
-            stopper++;
-            if(stopper==25)
-            {
-                clearInterval(timer);
-            }
-        },42);
-    }
-    </script>
-    <style>
-    *
-{
-    margin: 0;
-}
-nav
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-    width: 100vw;
-    border-bottom: 1px solid black;
-    box-shadow: 1px 5px 15px;
-    background-color: aquamarine;
-}
-header, main, footer
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 4vh 4vh;
-    padding: 1vh;
-}
-header
-{
-    background-image: url("https://i.imgur.com/JmeNxkS.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: whitesmoke;
-    box-shadow: 0px 0px 15px black;
-}
-h1
-{
-    text-shadow: 2px 2px 5px aqua;
-}
-    </style>
-    <title>Exercise A</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Start</title>
 </head>
 <body>
     <nav>
